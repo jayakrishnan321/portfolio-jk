@@ -5,14 +5,14 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[80vh] sm:min-h-[85vh] md:min-h-screen flex items-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-0"
+      className="flex items-center px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           {/* Left Section - Text Content */}
           <div className="text-white space-y-3 sm:space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1">
             <div className="space-y-2 sm:space-y-3">
-              <p className="text-base sm:text-lg md:text-xl text-gray-300 font-medium pt-2 sm:pt-0">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 font-medium pt-0">
                 Hi, I'm
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent leading-tight">
@@ -68,7 +68,7 @@ const Hero = () => {
           {/* Right Section - Profile Image */}
           <div className="flex justify-center md:justify-end mt-4 sm:mt-6 md:mt-0 order-1 md:order-2">
             <div className="relative">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-2xl p-1">
+              <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-2xl p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src="/assets/images/profile-placeholder.svg"
@@ -81,7 +81,7 @@ const Hero = () => {
                   />
                   <div className="w-full h-full bg-gray-300 flex items-center justify-center hidden">
                     <svg
-                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 text-gray-500"
+                      className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 text-gray-500"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

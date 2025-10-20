@@ -9,8 +9,10 @@ const AnimatedStars = () => {
     
     // Set canvas size
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+      const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+      canvas.width = vw;
+      canvas.height = vh;
     };
     
     resizeCanvas();
@@ -104,7 +106,10 @@ const AnimatedStars = () => {
         top: 0,
         left: 0,
         right: 0,
-        bottom: 0
+        bottom: 0,
+        width: '100vw',
+        height: '100vh',
+        minHeight: '100vh'
       }}
     />
   );

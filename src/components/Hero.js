@@ -3,11 +3,11 @@ import AnimatedText from './AnimatedText';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8">
+    <section id="home" className="min-h-[80vh] sm:min-h-[85vh] lg:min-h-screen flex items-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-0">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left Section - Text Content */}
-          <div className="text-white space-y-4 sm:space-y-6 text-center lg:text-left">
+          <div className="text-white space-y-3 sm:space-y-4 lg:space-y-6 text-center lg:text-left order-2 lg:order-1">
             <div className="space-y-2 sm:space-y-3">
               <p className="text-base sm:text-lg md:text-xl text-gray-300 font-medium pt-2 sm:pt-0">
                 Hi, I'm
@@ -43,9 +43,9 @@ const Hero = () => {
           </div>
           
           {/* Right Section - Profile Image */}
-          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div className="flex justify-center lg:justify-end mt-4 sm:mt-6 lg:mt-0 order-1 lg:order-2">
             <div className="relative">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-2xl p-1">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-2xl p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
                     src="/assets/images/profile-placeholder.svg" 

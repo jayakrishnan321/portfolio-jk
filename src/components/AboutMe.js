@@ -2,10 +2,10 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24">
+    <section id="about" className="py-8 sm:py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* About Me Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-white">About </span>
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Me</span>
@@ -16,7 +16,7 @@ const AboutMe = () => {
         </div>
 
         {/* Skill Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Clean Code Card */}
           <div className="bg-black/20 backdrop-blur-lg border border-white/10 rounded-xl p-6 hover:bg-black/30 transition-all duration-300 hover:transform hover:scale-105">
             <div className="flex items-center mb-4">

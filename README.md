@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Portfolio - Jayakrishnan U
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with React and Tailwind CSS, featuring smooth animations and a beautiful starfield background.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Modern UI/UX**: Clean, responsive design with smooth animations and transitions
+- **Animated Background**: Dynamic starfield animation for an engaging visual experience
+- **Responsive Design**: Fully responsive layout that works seamlessly on all devices
+- **Smooth Scrolling**: Smooth navigation between sections
+- **Interactive Components**: 
+  - Animated text effects
+  - Interactive navigation menu
+  - Mobile-friendly hamburger menu
+  - Gradient effects and hover animations
 
-### `npm start`
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** 19.2.0 - UI library
+- **Tailwind CSS** 3.4.18 - Utility-first CSS framework
+- **Create React App** - Build tooling and development environment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+portfolio-jayakrishnan/
+├── frontend/
+│   ├── public/
+│   │   └── assets/
+│   │       └── images/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AboutMe.js
+│   │   │   ├── AnimatedStars.js
+│   │   │   ├── AnimatedText.js
+│   │   │   ├── Contact.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Header.js
+│   │   │   ├── Hero.js
+│   │   │   └── Projects.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── index.css
+│   ├── package.json
+│   └── tailwind.config.js
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Installation
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd portfolio-jayakrishnan
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navigate to the frontend directory**
+   ```bash
+   cd frontend
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎯 Usage
 
-### `npm run eject`
+### Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will open at [http://localhost:3000](http://localhost:3000) in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Build for Production
 
-## Learn More
+Create an optimized production build:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The build folder will contain the production-ready files that can be deployed to any static hosting service.
 
-### Code Splitting
+### Run Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm test
+```
 
-### Analyzing the Bundle Size
+## 📦 Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Header**: Fixed navigation header with smooth scroll functionality and mobile menu
+- **Hero**: Landing section with animated text and profile image
+- **AboutMe**: Personal information and skills section
+- **Projects**: Portfolio projects showcase
+- **Contact**: Contact form and social links
+- **Footer**: Footer with additional information
+- **AnimatedStars**: Background starfield animation component
+- **AnimatedText**: Text animation component for dynamic typing effects
 
-### Making a Progressive Web App
+## 🎨 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Styling
 
-### Advanced Configuration
+The project uses Tailwind CSS for styling. You can customize the design by:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Modifying Tailwind classes in component files
+2. Updating `tailwind.config.js` for theme customization
+3. Editing `src/index.css` for global styles
 
-### Deployment
+### Content
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Update the content in each component file:
+- `Hero.js` - Update name, title, and description
+- `AboutMe.js` - Update personal information
+- `Projects.js` - Add your projects
+- `Contact.js` - Update contact information

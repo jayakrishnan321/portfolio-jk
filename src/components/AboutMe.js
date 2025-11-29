@@ -40,10 +40,10 @@ const AboutMe = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white">UI/UX Design</h3>
+              <h3 className="text-xl font-bold text-white">Frontend Development</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Creating beautiful, intuitive interfaces that provide excellent user experiences.
+              I build responsive and user-friendly interfaces using React and Tailwind, focusing on clean structure and modern UI/UX. With Redux, I create smooth, predictable state management for scalable frontend applications
             </p>
           </div>
 
@@ -55,21 +55,15 @@ const AboutMe = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white">Performance</h3>
+              <h3 className="text-xl font-bold text-white">Backend Development</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Optimizing applications for speed and efficiency across all devices.
+              “I develop secure and efficient server-side logic using Node.js and Express, following clean API architecture. With MongoDB, I design flexible, scalable databases that power real-world applications.
             </p>
           </div>
         </div>
 
-        {/* My Journey Section */}
-        <div className="text-center">
-          <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">My Journey</h3>
-          <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            With years of experience in web development, I've worked on diverse projects ranging from small business websites to complex web applications. I'm constantly learning and adapting to new technologies to deliver the best solutions for my clients and create meaningful digital experiences.
-          </p>
-        </div>
+       
       </div>
     </section>
   );

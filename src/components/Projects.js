@@ -1,27 +1,32 @@
 import React from 'react';
-
+import eccommerceImage from '../projectimages/e-commerce.png';
+import notesharingImage from '../projectimages/notesharingsystem.png';
+import hotelimage from '../projectimages/hotelorderpro.png';
 const Projects = () => {
   const projectsData = [
     {
       title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with cart functionality, payment integration, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB"],
-      codeLink: "#",
-      liveLink: "#",
+      description: "A full-stack e-commerce shopping cart application that enables admins to manage products and users, allows customers to browse and purchase items, and lets suppliers handle order fulfillment with location-based assignment.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+      codeLink: "https://github.com/jayakrishnan321/Project-Shopping-cart",
+      liveLink: "https://project-shopping-cart-phi.vercel.app/user/dashboard",
+      image: eccommerceImage,
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team collaboration features.",
-      tech: ["React", "Firebase", "Tailwind"],
-      codeLink: "#",
-      liveLink: "#",
+      title: "HotelOrderPro",
+      description: "A full-stack restaurant & hotel ops platform for managing menus, tables, orders, and staff approvals through a modern admin dashboard.",
+      tech: ["React", "Mongodb", "Tailwind"," Node.js", "Express"],
+      codeLink: "https://github.com/jayakrishnan321/Project-HotelOrderPro",
+      liveLink: "https://project-hotel-order-pro.vercel.app/users/login",
+      image:hotelimage
     },
     {
-      title: "Portfolio Website",
-      description: "Modern portfolio template with smooth animations and responsive design.",
-      tech: ["React", "TypeScript", "Vite"],
-      codeLink: "#",
-      liveLink: "#",
+      title: "ShareMyNotes",
+      description: "Collaborative web app for creating, organizing, and sharing notes across teams or classrooms with fine-grained access control..",
+      tech: ["React", "MongoDB", "Express", "Node.js", "Tailwind"],
+      codeLink: "https://github.com/jayakrishnan321/Project-ShareMyNotes",
+      liveLink: "https://project-share-my-notes.vercel.app/admin/register",
+      image: notesharingImage,
     },
   ];
 
@@ -47,10 +52,13 @@ const Projects = () => {
               className="bg-black/20 backdrop-blur-lg border border-white/10 rounded-xl shadow-lg p-6 flex flex-col transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-black/30"
             >
               {/* Project Image Placeholder */}
-              <div className="w-full h-48 bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-4 4 4 4-4V5h-2a1 1 0 100 2h2v2l-4 4-4-4-4 4z" clipRule="evenodd" />
-                </svg>
+             {/* Project Image */}
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>

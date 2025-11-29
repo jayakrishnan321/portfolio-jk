@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-6 mb-8">
             {/* GitHub */}
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/jayakrishnan321"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110"

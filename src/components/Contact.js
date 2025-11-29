@@ -38,7 +38,7 @@ const Contact = () => {
                 href="mailto:your.email@example.com" 
                 className="text-blue-300 hover:text-blue-400 transition-colors duration-200 text-lg"
               >
-                your.email@example.com
+              jayakrishnanu2006@gmail.com
               </a>
             </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
                 href="tel:+15551234567" 
                 className="text-purple-300 hover:text-purple-400 transition-colors duration-200 text-lg"
               >
-                +1 (555) 123-4567
+                6238699052
               </a>
             </div>
 
@@ -67,7 +67,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h4 className="text-xl font-bold text-white mb-2">Location</h4>
-              <p className="text-gray-300 text-lg">Your City, Country</p>
+              <p className="text-gray-300 text-lg">Payyanur,india</p>
             </div>
           </div>
         </div>

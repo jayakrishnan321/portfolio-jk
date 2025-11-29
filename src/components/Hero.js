@@ -1,7 +1,19 @@
-import React from 'react';
+import React  from 'react';
 import AnimatedText from './AnimatedText';
 
 const Hero = () => {
+  
+
+  
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <section
       id="home"
@@ -29,7 +41,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 justify-center md:justify-start">
-              <button className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base">
+              <button onClick={() => scrollToSection('project')} className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base">
                 View Projects
                 <svg
                   className="w-4 h-4"
@@ -46,7 +58,7 @@ const Hero = () => {
                 </svg>
               </button>
 
-              <button className="border border-white/30 hover:border-white/50 text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-300 hover:bg-white/10 flex items-center justify-center gap-2 text-sm sm:text-base">
+              <button onClick={() => scrollToSection('contacts')} className="border border-white/30 hover:border-white/50 text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-300 hover:bg-white/10 flex items-center justify-center gap-2 text-sm sm:text-base">
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -71,7 +83,7 @@ const Hero = () => {
               <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-72 lg:h-72 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-xl p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src="/assets/images/profile-placeholder.svg"
+                    src="/assets/images/profileimage.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {
